@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Raster\BlurBG.png" />
+    <None Remove="Resources\Raster\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ICSharpCode.NRefactory" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CEdith.SharpAntics\CEdith.SharpAntics.csproj" />
+    <ProjectReference Include="..\PanCanvas\WpfPanAndZoom.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Raster\BlurBG.png" />
+    <Resource Include="Resources\Raster\Logo.png" />
+  </ItemGroup>
+
+</Project>
